@@ -1,82 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Corvane - product-led software from Denmark">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Corvane - product-led software from Denmark">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.85">
       <stop offset="0%" stop-color="#0f1c2e"/>
-      <stop offset="55%" stop-color="#132538"/>
+      <stop offset="70%" stop-color="#132538"/>
       <stop offset="100%" stop-color="#15545b"/>
     </linearGradient>
-    <radialGradient id="glow" cx="78%" cy="28%" r="45%">
-      <stop offset="0%" stop-color="#1f6f78" stop-opacity="0.55"/>
-      <stop offset="55%" stop-color="#1f6f78" stop-opacity="0.12"/>
+    <radialGradient id="glow" cx="78%" cy="50%" r="38%">
+      <stop offset="0%" stop-color="#1f6f78" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#1f6f78" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="18%" cy="80%" r="40%">
-      <stop offset="0%" stop-color="#3a5169" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#3a5169" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1f6f78" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#a7d6d2" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#1f6f78" stop-opacity="0"/>
-    </linearGradient>
     <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#f8fafc"/>
       <stop offset="100%" stop-color="#d7e0ea"/>
     </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a7d6d2"/>
+      <stop offset="85%" stop-color="#a7d6d2" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a7d6d2" stop-opacity="0"/>
+    </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#d7e0ea" stroke-opacity="0.06" stroke-width="1"/>
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="1200" height="420" fill="url(#sky)"/>
-  <rect width="1200" height="420" fill="url(#glow)"/>
-  <rect width="1200" height="420" fill="url(#glow2)"/>
-  <rect width="1200" height="420" fill="url(#grid)"/>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#glow)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
 
-  <!-- orbit rings -->
-  <g fill="none" stroke="#d7e0ea" stroke-opacity="0.14" stroke-width="1.2">
-    <ellipse cx="960" cy="140" rx="210" ry="78">
-      <animateTransform attributeName="transform" type="rotate" from="0 960 140" to="360 960 140" dur="48s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="960" cy="140" rx="160" ry="54" stroke-opacity="0.22">
-      <animateTransform attributeName="transform" type="rotate" from="180 960 140" to="540 960 140" dur="36s" repeatCount="indefinite"/>
-    </ellipse>
+  <g transform="translate(960,200)">
+    <circle r="120" fill="none" stroke="#d7e0ea" stroke-opacity="0.10" stroke-width="1"/>
+    <circle r="88" fill="none" stroke="#d7e0ea" stroke-opacity="0.14" stroke-width="1"/>
+    <circle r="56" fill="none" stroke="#d7e0ea" stroke-opacity="0.20" stroke-width="1"/>
+    <circle r="5" fill="#1f6f78"/>
+      <circle cx="118.83" cy="16.70" r="3.5" fill="#a7d6d2">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-74.63" cy="46.63" r="3" fill="#a7d6d2">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-17.30" cy="-53.26" r="2.5" fill="#a7d6d2">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+      </circle>
   </g>
 
-  <!-- satellite dots -->
-  <circle cx="1148" cy="140" r="4" fill="#a7d6d2">
-    <animateTransform attributeName="transform" type="rotate" from="0 960 140" to="360 960 140" dur="48s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="800" cy="140" r="3" fill="#f4f7fa" fill-opacity="0.8">
-    <animateTransform attributeName="transform" type="rotate" from="90 960 140" to="450 960 140" dur="36s" repeatCount="indefinite"/>
-  </circle>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <g transform="translate(80,112)">
+      <rect width="52" height="52" rx="13" fill="#1f6f78"/>
+      <path d="M37.98,35.70 A14.5,14.5 0 1 1 37.98,16.30 L33.89,19.98 A9,9 0 1 0 33.89,32.02 Z" fill="#f4f7fa"/>
+      <text x="72" y="26.0" dominant-baseline="central"
+            fill="url(#word)" font-size="46" font-weight="700" letter-spacing="4"
+            font-family="Georgia, 'Times New Roman', serif">CORVANE</text>
+    </g>
 
-  <!-- accent mark -->
-  <g transform="translate(72,78)">
-    <rect x="0" y="0" width="56" height="56" rx="14" fill="#1f6f78"/>
-    <path d="M14 36V20h8.4c7.2 0 11.6 3.5 11.6 8.7 0 5.3-4.4 8.8-11.6 8.8H22.2V36H14zm8.2-13.2v7.5h2.1c3.5 0 5.5-1.5 5.5-3.8s-2-3.7-5.5-3.7h-2.1zM39 36l-6.8-16h8.2l2.5 7.6 2.5-7.6h8.1L46.7 36H39z" fill="#f4f7fa"/>
-  </g>
-
-  <text x="72" y="190" fill="url(#word)" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" letter-spacing="2">CORVANE</text>
-  <rect x="72" y="214" width="280" height="2" fill="url(#beam)">
-    <animate attributeName="width" values="120;420;120" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.45;1;0.45" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <text x="72" y="268" fill="#d7e0ea" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="500">
-    Product-led software for industries that deserve better.
-  </text>
-  <text x="72" y="308" fill="#a7d6d2" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" letter-spacing="3.5">
-    DENMARK  |  MODERN SAAS  |  BUILT WITH CUSTOMERS
-  </text>
-
-  <!-- floating status chip -->
-  <g transform="translate(860,300)">
-    <rect width="260" height="54" rx="12" fill="#0f1c2e" fill-opacity="0.55" stroke="#a7d6d2" stroke-opacity="0.35"/>
-    <circle cx="28" cy="27" r="6" fill="#1f6f78">
-      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="48" y="24" fill="#f4f7fa" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600">SYSTEM STATUS</text>
-    <text x="48" y="42" fill="#a7d6d2" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12">Shipping continuously | Feedback online</text>
+    <rect x="80" y="192" width="327" height="2" fill="url(#rule)"/>
+    <text x="80" y="237" fill="#d7e0ea" font-size="19" font-weight="400">Product-led software for industries that deserve better.</text>
+    <g transform="translate(80,285)" fill="#a7d6d2" font-size="11" font-weight="600" letter-spacing="2.4">
+      <text x="0" y="0">DENMARK</text>
+      <circle cx="88" cy="-3.5" r="1.5" fill="#1f6f78"/>
+      <text x="102" y="0">MODERN SAAS</text>
+      <circle cx="224" cy="-3.5" r="1.5" fill="#1f6f78"/>
+      <text x="238" y="0">BUILT WITH CUSTOMERS</text>
+    </g>
   </g>
 </svg>
